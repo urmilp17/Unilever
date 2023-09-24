@@ -26,13 +26,13 @@ public class MainActivity extends AppCompatActivity {
 
         pinEditText = findViewById(R.id.pinEditText);
 
-//        try {
-//            DBHelper dbs = new DBHelper(this);
-//            SQLiteDatabase dbss = dbs.getWritableDatabase();
-//            Toast.makeText(this, "Table Created", Toast.LENGTH_SHORT).show();
-//        } catch(Exception e){
-//            Toast.makeText(this, "Error: " + e, Toast.LENGTH_SHORT).show();
-//        }
+        try {
+            DBHelper dbs = new DBHelper(this);
+            SQLiteDatabase dbss = dbs.getWritableDatabase();
+            Toast.makeText(this, "Table Created", Toast.LENGTH_SHORT).show();
+        } catch(Exception e){
+            Toast.makeText(this, "Error: " + e, Toast.LENGTH_SHORT).show();
+        }
 
     }
 
